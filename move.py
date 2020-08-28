@@ -32,7 +32,7 @@ def move_z(th,z,v,t):
     center_z = (th[0]-85,th[1]-239)
     
     pyautogui.moveTo(center_z)
-    pyautogui.moveRel(0,v*z)
+    pyautogui.moveRel(0,-v*z)
     pyautogui.mouseDown()
     time.sleep(t)
     pyautogui.mouseUp()
